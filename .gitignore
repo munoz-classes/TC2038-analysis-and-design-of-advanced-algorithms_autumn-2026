@@ -1,0 +1,33 @@
+# ==========================================
+# .gitignore para TC2038 - Python + VS Code
+# ==========================================
+
+# 1. Caché y archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 2. Entornos virtuales (buenas prácticas para el futuro)
+venv/
+env/
+.env
+
+# 3. Archivos basura del sistema operativo
+# (Evita que los usuarios de Mac suban archivos invisibles y viceversa)
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 4. Configuraciones de Visual Studio Code
+# Ignoramos la configuración personal del editor local...
+.vscode/*
+# ...PERO obligamos a Git a subir los archivos de configuración de estilo compartidos
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# 5. Archivos de utilidades y datos temporales
+*.log
+*.sqlite3
