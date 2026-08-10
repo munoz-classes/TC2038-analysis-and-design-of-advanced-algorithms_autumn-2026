@@ -194,7 +194,7 @@ Computación - Facultad de Ingeniería
 4. **Bibliografía Oficial y Matriz por Capítulo** (Libro Base y Consultas)
 5. **Uso Responsable de la Inteligencia Artificial** (Reglas y Autoría)
 6. **Motivación:** Casos de Impacto Real en la Industria
-7. **Introducción Teórica:** Análisis y Diseño de Algoritmos (Capítulo 1)
+7. **Introducción Teórica:** Análisis y Diseño de Algoritmos
 
 ---
 
@@ -340,101 +340,6 @@ Se aplicarán **5 Quizzes individuales (2% c/u = 10%)** al finalizar cada módul
 | :---: | :--- | :--- | :--- |
 | **Quiz 1** | Módulo 1: Técnicas de Diseño | **Final de Semana 3** | Análisis de complejidad y estrategias de diseño |
 | **Quiz 2** | Módulo 2: Manejo de Strings | **Final de Semana 5** | Algoritmos de patronaje y estructuras de texto |
-| **Quiz 3** | Módulo 3: Grafos y Optimización | **Final de Semana 9** | Rutas cortas, árboles mínimos y flujo |
-| **Quiz 4** | Módulo 4: Geometría Computacional | **Final de Semana 13** | Algoritmos geométricos y cascos convexos |
-| **Quiz 5** | Módulo 5: Búsqueda Avanzada | **Final de Semana 16** | Búsqueda heurística, A* y metaheurísticas |
-
----
-
-# Evidencias Integradoras y Competencias (55%)
-
-<div class="solution-box">
-
-### Evidencias Principales de la Unidad de Formación:
-
-- **E1. Actividad Integradora 1 (20%):** Solución y defensa de la **Situación Problema 1** (Semana 5). Evalúa el diseño e implementación de algoritmos en técnicas básicas y cadenas.
-- **E2. Actividad Integradora 2 (25%):** Solución y defensa de la **Situación Problema 2** (Semana 14). Demuestra la integración compleja de grafos, optimización y geometría.
-- **E3. Póster Argumentativo y Exposición (10%):** Exposición reflexiva sobre la eficiencia, sustentabilidad y desempeño de las soluciones desarrolladas (Semana 17).
-
-</div>
-
----
-
-# Políticas de Retroalimentación y Canvas
-
-<div class="alert-box">
-
-### Lineamientos de Evaluación y Comunicación:
-- **Gestión Oficial en Canvas:** Todas las actividades, rúbricas de evaluación y calificaciones numéricas finales se administrarán formalmente en Canvas.
-- **Retroalimentación Continua:** Se proporcionará retroalimentación durante la interacción presencial en clase y en cada módulo para corregir errores durante el proceso de aprendizaje.
-- **Condición de Defensa:** La nota final de las actividades integradoras tomará en cuenta la argumentación individual durante las preguntas en la presentación del equipo.
-
-</div>
-
----
-
-# Plan de Evaluación: Esquema General
-
-El sistema de evaluación combina tareas formativas y sumativas con evidencias integradoras para la demostración de subcompetencias.
-
-<div class="info-box">
-
-### Distribución General de la Calificación (100%):
-- **Tareas Evaluativas y Actividades (45%):**
-  - Actividades de aprendizaje independiente por Módulo (5 módulos × 7% = 35%)
-  - Evaluaciones de conceptos teóricos / Quizzes (10%)
-- **Evidencias del Logro de Competencias (55%):**
-  - Actividad Integradora 1 - Situación Problema 1 (20%)
-  - Actividad Integradora 2 - Situación Problema 2 (25%)
-  - Póster Argumentativo de Reflexión y Exposición (10%)
-
-</div>
-
----
-
-# Tareas Evaluativas por Módulo (45%)
-
-<div class="info-box">
-
-Las tareas evaluativas permiten consolidar el dominio procedimental y conceptual de forma progresiva:
-
-</div>
-
-| Componente | Descripción del Componente | Ponderación |
-| :--- | :--- | :---: |
-| **Módulo 1** | Tareas de programación (Divide y vencerás, PD, Avaros, Backtracking, Poda) | **7%** |
-| **Módulo 2** | Tareas de programación en cadenas (Hash Strings, Suffix Array) | **7%** |
-| **Módulo 3** | Tareas de algoritmos sobre grafos (Tries, Dijkstra, Floyd, Mochila, Coloreo) | **7%** |
-| **Módulo 4** | Tareas de geometría computacional (Proximidad, Polígonos, Búsqueda, Random) | **7%** |
-| **Módulo 5** | Tareas de búsqueda avanzada (Bitmask, Meet in middle, A*, Heurísticas) | **7%** |
-| **Quizzes** | 5 Evaluaciones conceptuales rápidas al cierre de cada módulo | **10%** |
-
----
-
-# Actividades de Aprendizaje Independiente
-
-<div class="info-box">
-
-### Desglose de Implementaciones Requeridas por Módulo:
-
-- **Módulo 1:** Act. 1.1 Divide y vencerás | Act. 1.2 Prog. Dinámica y Avaros | Act. 1.3 Backtracking y Poda.
-- **Módulo 2:** Act. 2.1 Hash String | Act. 2.2 Suffix Array.
-- **Módulo 3:** Act. 3.1 Tries | Act. 3.2 Dijkstra y Floyd | Act. 3.3 Knapsack | Act. 3.4 Graph Coloring.
-- **Módulo 4:** Act. 4.1 Intersección/Proximidad | Act. 4.2 Polígonos Convexos | Act. 4.3 Búsqueda Geométrica | Act. 4.4 Randomized Search.
-- **Módulo 5:** Act. 5.1 Knight’s Tour | Act. 5.2 Bitmask | Act. 5.3 Poda Pesada | Act. 5.4 Meet in the middle | Act. 5.5 A* | Act. 5.6 & 5.7 Hill-Climbing / Simulated Annealing.
-
-</div>
-
----
-
-# Estrategia y Aplicación de Quizzes (10%)
-
-Se aplicarán **5 Quizzes individuales (2% c/u = 10%)** al finalizar cada módulo para asegurar la comprensión teórica previa:
-
-| Quiz | Módulo Evaluado | Momento de Aplicación | Enfoque Evaluativo |
-| :---: | :--- | :--- | :--- |
-| **Quiz 1** | Módulo 1: Técnicas de Diseño | **Final de Semana 3** | Análisis de complejidad y estrategias de diseño |
-| **Quiz 2** | Módulo 2: Manejo de Strings | **Final de Semana 4** | Algoritmos de patronaje y estructuras de texto |
 | **Quiz 3** | Módulo 3: Grafos y Optimización | **Final de Semana 9** | Rutas cortas, árboles mínimos y flujo |
 | **Quiz 4** | Módulo 4: Geometría Computacional | **Final de Semana 13** | Algoritmos geométricos y cascos convexos |
 | **Quiz 5** | Módulo 5: Búsqueda Avanzada | **Final de Semana 16** | Búsqueda heurística, A* y metaheurísticas |
