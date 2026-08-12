@@ -90,7 +90,7 @@ Antes de diseñar algoritmos, debemos medir su eficiencia:
 ### Jerarquía de Complejidades Comunes:
 $$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(2^n) < O(n!)$$
 
-> **Regla de oro:** El diseño algorítmico busca desplazar problemas de clases exponenciales $O(2^n)$ a polinomiales $O(n^k)$ o logarítmicas $O(n \log n)$.
+**Regla de oro:** El diseño algorítmico busca desplazar problemas de clases exponenciales $O(2^n)$ a polinomiales $O(n^k)$ o logarítmicas $O(n \log n)$.
 
 ---
 
