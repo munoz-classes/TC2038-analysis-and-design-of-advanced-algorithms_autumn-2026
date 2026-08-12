@@ -95,7 +95,6 @@ $$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(2^n) < O(n!)$$
 ---
 
 # 1.1 Divide y Vencerás
-### (Tiempo Estimado: 1.5 Horas)
 
 ---
 
@@ -103,7 +102,7 @@ $$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(2^n) < O(n!)$$
 
 <div class="problem-box">
 
-### ✈️ El Desafío del Control de Tráfico Aéreo
+### El Desafío del Control de Tráfico Aéreo
 Un sistema de radar monitorea $N$ aeronaves en un sector aéreo. Para evitar colisiones en tiempo real, el sistema debe calcular constantemente el **par de aviones más cercanos** ($P_i, P_j$) y alertar si la distancia es menor a un umbral de seguridad $d_{min}$.
 
 * **Datos de Entrada:** Un conjunto $P$ de $N$ puntos en un plano 2D $(x, y)$, donde $N = 100,000$.
