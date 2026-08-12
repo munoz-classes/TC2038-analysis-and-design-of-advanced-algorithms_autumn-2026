@@ -25,7 +25,6 @@ Desktop.ini
 # Ignoramos la configuración personal del editor local...
 .vscode/*
 # ...PERO obligamos a Git a subir los archivos de configuración de estilo compartidos
-!.vscode/settings.json
 !.vscode/extensions.json
 
 # 5. Archivos de utilidades y datos temporales
