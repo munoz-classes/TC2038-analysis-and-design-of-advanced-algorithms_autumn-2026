@@ -3,7 +3,68 @@ public class Divide {
         System.out.println("Begin...");
         int n = 7;
         // System.out.print("Fibonacci para n=" + n + " es: " + fibonacci(n));
-        hanoi(5, 'A', 'C', 'B');
+        // hanoi(5, 'A', 'C', 'B');
+
+        int[] A = { 13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7 };
+        System.out.println(maxASubarray(A, 0, A.length - 1));
+    }
+
+    public static class SubArrayResult {
+        int left, right, sum;
+
+        SubArrayResult(int left, int right, int sum) {
+            this.left = left;
+            this.right = right;
+            this.sum = sum;
+        }
+
+        @Override
+        public String toString() {
+            return "SubArrayResult [Inicio=" + left + ", Fin=" + right + ", Suma=" + sum + "]";
+        }
+    }
+
+    public static SubArrayResult maxASubarray(int[] list, int low, int high) {
+        if (low == high) {
+            return new SubArrayResult(low, high, list[low]);
+        }
+        int mid = low + (high - low) / 2;
+        SubArrayResult leftResult = maxASubarray(list, low, mid);
+        SubArrayResult rightResult = maxASubarray(list, mid + 1, high);
+        SubArrayResult cross = MaxSubarray.findMaxCrossingSubarray(list, low, mid, high);
+        if (leftResult.sum >= rightResult.sum && leftResult.sum >= cross.sum) {
+            return leftResult;
+        }
+
+        if (rightResult.sum >= cross.sum) {
+            return rightResult;
+        }
+
+        return cross;
+
+    }
+
+    public static class MaxSubarray {
+        public static SubArrayResult findMaxCrossingSubarray(int[] list, int low, int mid, int high) {
+            int leftSum = Integer.MIN_VALUE, sum = 0, maxLeft = mid;
+            for (int i = mid; i >= low; i--) {
+                sum += list[i];
+                if (sum > leftSum) {
+                    leftSum = sum;
+                    maxLeft = i;
+                }
+            }
+            int rightSum = Integer.MIN_VALUE, maxRight = mid + 1;
+            sum = 0;
+            for (int j = mid + 1; j <= high; j++) {
+                sum += list[j];
+                if (sum > rightSum) {
+                    rightSum = sum;
+                    maxRight = j;
+                }
+            }
+            return new SubArrayResult(maxLeft, maxRight, leftSum + rightSum);
+        }
     }
 
     public static int fibonacci(int n) {
