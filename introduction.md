@@ -1290,5 +1290,3 @@ Antes de ingresar a la siguiente sesión presencial, asegura haber completado:
 ¡Nos vemos en la siguiente sesión para iniciar de lleno con la implementación y optimización de algoritmos por **Divide y Vencerás**!
 
 </div>
-
----
