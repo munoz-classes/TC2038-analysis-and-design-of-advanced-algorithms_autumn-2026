@@ -52,7 +52,7 @@ def lps(pattern: str) -> list[int]:
 
     for i in range(1, m):
         while j > 0 and pattern[i] != pattern[j]:
-            j = lps[j - 1]
+            j = _lps[j - 1]
         if pattern[i] == pattern[j]:
             j += 1
         _lps[i] = j
@@ -64,7 +64,26 @@ def kmp(text: str, pattern: str) -> list[int]:
     if not text:
         return []
 
+    _lps = lps(pattern)
+
+    if not _lps:
+        return []
+
+    j = 0
+
+    _kmp = []
+
+    for i in range(len(text)):
+        while j > 0 and text[i] != pattern[j]:
+            j = _lps[j - 1]
+        if text[i] == pattern[j]:
+            j += 1
+
+        if j == len(pattern):
+            _kmp.append(i - j + 1)
+            j = _lps[j - 1]
+    return _kmp
+
 
 if __name__ == "__main__":
-    print(kmp_prefix_function_plus("abbababba"))
-    print(kmp_prefix_function_plus("abbacbabac"))
+    print(kmp("ADHKOLABACABABLOABACABABACABAB", "ABACABAB"))
