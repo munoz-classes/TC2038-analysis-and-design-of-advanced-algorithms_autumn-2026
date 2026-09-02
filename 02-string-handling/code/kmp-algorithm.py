@@ -41,6 +41,30 @@ def kmp_prefix_function_plus(pattern: str) -> list[int]:
     return pi
 
 
+def lps(pattern: str) -> list[int]:
+    m = len(pattern)
+    if m == 0:
+        return []
+
+    _lps = [0] * m
+
+    j = 0
+
+    for i in range(1, m):
+        while j > 0 and pattern[i] != pattern[j]:
+            j = lps[j - 1]
+        if pattern[i] == pattern[j]:
+            j += 1
+        _lps[i] = j
+
+    return _lps
+
+
+def kmp(text: str, pattern: str) -> list[int]:
+    if not text:
+        return []
+
+
 if __name__ == "__main__":
     print(kmp_prefix_function_plus("abbababba"))
     print(kmp_prefix_function_plus("abbacbabac"))
