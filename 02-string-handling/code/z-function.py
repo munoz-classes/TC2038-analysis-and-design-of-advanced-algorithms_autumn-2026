@@ -36,10 +36,50 @@ def zfunction(pattern: str) -> list[int]:
                 R = i + z[i] - 1
 
 
-def points_agrupation(nums: list[int]) -> list[int]:
-    n = len(nums)
-    return []
+def shuffle_plus(nums: list[int], n: int) -> list[int]:
+    sol = [0] * 2 * n
+    for i in range(n):
+        sol[2 * i] = nums[i]
+        sol[2 * i + 1] = nums[n + i]
+    return sol
+
+
+def shuffle(nums: list[int], n: int) -> list[int]:
+    sol = [0] * 2 * n
+    a = 0
+    b = (2 * n) - 1
+    grouping(nums, sol, a, b, n)
+    return sol
+
+
+def grouping(nums: list[int], sol: list[int], a: int, b: int, n: int):
+    # base
+    if a == b:
+        if a < n:
+            sol[2 * a] = nums[a]
+        else:
+            sol[2 * (a - n) + 1] = nums[a]
+        return
+
+    # divide
+    m = (b - a) // 2
+    # left [a, m] right [m+1, b]
+    grouping(nums, sol, a, a + m, n)
+    grouping(nums, sol, a + m + 1, b, n)
+
+
+def findMaxConsecutiveOnes(nums: list[int]) -> int:
+    c = _c = 0
+    for value in nums:
+        if value == 1:
+            _c += 1
+        else:
+            c = max(c, _c)
+            _c = 0
+    return max(c, _c)
 
 
 if __name__ == "__main__":
-    print(zfunction("abaxabab"))
+    nums = [1, 1, 0, 1, 1, 1]
+    # n = 4
+    print(findMaxConsecutiveOnes(nums))
