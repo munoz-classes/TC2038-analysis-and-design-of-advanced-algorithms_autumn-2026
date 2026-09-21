@@ -1,0 +1,10 @@
+Fátima Montserrat Herrera González | A01770839
+Kiara Hermann San Lucas | A01771209
+
+Para la resolución de esta actividad integradora, se trabajo de la siguiente manera:
+
+	- Parte 1 y 2, algoritmos de KMP y Manacher | Kiara Hermann
+
+	- Parte 3, algoritmo Suffix Array | Fátima Herrera
+
+	- Documento reflexión | se desarrollo totalmente juntas
