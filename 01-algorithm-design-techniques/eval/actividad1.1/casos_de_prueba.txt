@@ -1,0 +1,51 @@
+============================================================================
+CASOS DE PRUEBA - MergeSort (orden de mayor a menor)
+Curso: TC2038 - Analisis y diseno de algoritmos avanzados
+Archivo principal: main.cpp  (lee de la entrada estandar)
+============================================================================
+
+Para reproducir cada caso:
+  g++ -std=c++17 -Wall -Wextra -O2 -o main main.cpp
+  ./main < casoN.txt        (debe coincidir con casoN_esperado.txt)
+
+----------------------------------------------------------------------------
+CASO 1 - Arreglo general desordenado con duplicados
+----------------------------------------------------------------------------
+Entrada : 7 valores -> 38, 27, 43, 3, 9, 82, 10
+Salida  : 82, 43, 38, 27, 10, 9, 3
+Valida  : Ordenamiento correcto de un arreglo tipico, incluyendo un valor
+          repetido, de mayor a menor.
+
+----------------------------------------------------------------------------
+CASO 2 - Arreglo en orden ascendente (peor forma para ordenar descendente)
+----------------------------------------------------------------------------
+Entrada : 5 valores -> 1, 3, 5, 7, 9
+Salida  : 9, 7, 5, 3, 1
+Valida  : El algoritmo invierte por completo un arreglo ya ordenado de menor
+          a mayor.
+
+----------------------------------------------------------------------------
+CASO 3 - Numeros negativos, cero y duplicados
+----------------------------------------------------------------------------
+Entrada : 6 valores -> -3.5, 0, 2, -1, 5.5, -3.5
+Salida  : 5.5, 2, 0, -1, -3.5, -3.5
+Valida  : Manejo correcto de valores negativos, el cero y elementos
+          repetidos (estabilidad ante empates).
+
+----------------------------------------------------------------------------
+CASO 4 - Un solo elemento (caso de borde)
+----------------------------------------------------------------------------
+Entrada : 1 valor -> 42.7
+Salida  : 42.7
+Valida  : Caso base del algoritmo: un arreglo de tamano 1 ya esta ordenado.
+
+============================================================================
+COMPLEJIDAD COMPUTACIONAL
+============================================================================
+mergeHalves (combinar) : Tiempo O(n)        Espacio O(n)
+mergeSort   (dividir)  : Tiempo O(n log n)  Espacio O(log n) por recursion
+Programa completo      : Tiempo O(n log n)  Espacio O(n)
+
+La recurrencia es T(n) = 2 T(n/2) + O(n), que por el Teorema Maestro
+(caso 2) resulta en O(n log n) en el peor, mejor y caso promedio.
+============================================================================
